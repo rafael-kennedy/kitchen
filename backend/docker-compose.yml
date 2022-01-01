@@ -1,0 +1,61 @@
+version: "3.9"
+services:
+  auth:
+    build: ./auth
+    env_file: ./auth/.env
+    volumes:
+      - ./auth:/app
+    command: "npx nodemon --inspect=0.0.0.0:9229 src/index.js"
+    ports:
+      - "3001:8080"
+      - "4001:9229"
+  facilities:
+    build: ./facilities
+    env_file: ./facilities/.env
+    environment:
+      MONGO_CONNECTION_STRING: mongodb://root:example@mongo:27017
+      MONGO_DATABASE: dev
+    volumes:
+      - ./facilities:/app
+    command: "npx nodemon --inspect=0.0.0.0:9229 src/index.js"
+    depends_on:
+      - mongo
+    ports:
+      - "3002:8080"
+      - "4002:9229"
+  uploads:
+    build: uploads
+    env_file: uploads/.env
+    environment:
+      MONGO_CONNECTION_STRING: mongodb://root:example@mongo:27017
+      MONGO_DATABASE: dev
+      STORAGE_BUCKET: "dev-storage-bucket"
+      USE_FAKE_STORAGE: "true"
+    volumes:
+      - ./uploads:/app
+    command: "npx nodemon --inspect=0.0.0.0:9229 src/index.js"
+    depends_on:
+      - mongo
+    ports:
+      - "3003:8080"
+      - "4003:9229"
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: dev
+
+  fake_storage:
+    image: fsouza/fake-gcs-server
+    command: "/bin/fake-gcs-server -scheme http"
+    ports:
+      - "4443:4443"
+volumes:
+  mongodata:

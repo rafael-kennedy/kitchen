@@ -1,0 +1,24 @@
+{
+  "name": "facilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@feathersjs/express": "^4.5.11",
+    "@feathersjs/feathers": "^4.5.11",
+    "axios": "^0.24.0",
+    "cookie-parser": "^1.4.6",
+    "express-jwt": "^6.1.0",
+    "express-openid-connect": "^2.5.2",
+    "feathers-mongoose": "^8.5.1",
+    "jwks-rsa": "^2.0.5",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.1.3"
+  }
+}
