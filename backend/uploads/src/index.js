@@ -3,6 +3,8 @@ import express from "@feathersjs/express";
 import cookieParser from "cookie-parser";
 import oidc from "express-openid-connect";
 import { registerFilesService } from "./services/files.js";
+import { setupMongoose } from "./mongo.js";
+import { registerMetadataService } from "./services/metadata/metadata.service.js";
 
 const { auth, requiresAuth } = oidc;
 
@@ -26,7 +28,7 @@ app.use(auth(config));
 app.use(requiresAuth());
 
 const port = process.env.PORT || 8080;
-// setupMongoose();
+setupMongoose();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -42,6 +44,7 @@ app.use((req, res, next) => {
 });
 
 registerFilesService(app);
+registerMetadataService(app);
 
 app
   .listen(port)

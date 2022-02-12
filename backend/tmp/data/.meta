@@ -1,0 +1,186 @@
+{
+  "buckets": {
+    "private-files": {
+      "kind": "storage#bucket",
+      "id": "private-files",
+      "selfLink": "/storage/v1/b/private-files",
+      "projectNumber": "1234",
+      "name": "private-files",
+      "timeCreated": "2022-01-16T19:02:30.457537Z",
+      "updated": "2022-01-16T19:02:30.457537Z",
+      "metageneration": "1",
+      "iamConfiguration": {
+        "bucketPolicyOnly": {
+          "enabled": false
+        },
+        "uniformBucketLevelAccess": {
+          "enabled": false
+        }
+      },
+      "location": "US",
+      "locationType": "multi-region",
+      "storageClass": "STANDARD",
+      "etag": "CAE="
+    },
+    "public-files": {
+      "kind": "storage#bucket",
+      "id": "public-files",
+      "selfLink": "/storage/v1/b/public-files",
+      "projectNumber": "1234",
+      "name": "public-files",
+      "timeCreated": "2022-01-16T19:02:30.464998Z",
+      "updated": "2022-01-16T19:02:30.464998Z",
+      "metageneration": "1",
+      "iamConfiguration": {
+        "bucketPolicyOnly": {
+          "enabled": false
+        },
+        "uniformBucketLevelAccess": {
+          "enabled": false
+        }
+      },
+      "location": "US",
+      "locationType": "multi-region",
+      "storageClass": "STANDARD",
+      "etag": "CAE="
+    }
+  },
+  "objects": {
+    "public-files": {
+      "google-oauth2_114249034509937388266/pexels-anna-tarazevich-6937447.jpg": {
+        "kind": "storage#object",
+        "id": "public-files/google-oauth2_114249034509937388266/pexels-anna-tarazevich-6937447.jpg/1642360255",
+        "selfLink": "/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/pexels-anna-tarazevich-6937447.jpg",
+        "name": "google-oauth2_114249034509937388266/pexels-anna-tarazevich-6937447.jpg",
+        "bucket": "public-files",
+        "generation": "1642360255",
+        "metageneration": "2",
+        "contentType": "image/jpeg",
+        "timeCreated": "2022-01-16T19:10:55.315381Z",
+        "updated": "2022-01-16T19:10:55.315381Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2022-01-16T19:10:55.315381Z",
+        "size": "27099",
+        "md5Hash": "TfCD6Lanjpbc9U177oat8A==",
+        "mediaLink": "http://0.0.0.0:4443/download/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/pexels-anna-tarazevich-6937447.jpg?generation=1642360255&alt=media",
+        "crc32c": "H8C2MA==",
+        "etag": "TfCD6Lanjpbc9U177oat8A=="
+      },
+      "google-oauth2_114249034509937388266/thumb/pexels-tanya-gorelova-3933193.jpg": {
+        "kind": "storage#object",
+        "id": "public-files/google-oauth2_114249034509937388266/thumb/pexels-tanya-gorelova-3933193.jpg/1642360404",
+        "selfLink": "/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/thumb/pexels-tanya-gorelova-3933193.jpg",
+        "name": "google-oauth2_114249034509937388266/thumb/pexels-tanya-gorelova-3933193.jpg",
+        "bucket": "public-files",
+        "generation": "1642360404",
+        "metageneration": "2",
+        "contentType": "image/jpeg",
+        "timeCreated": "2022-01-16T19:13:24.400234Z",
+        "updated": "2022-01-16T19:13:24.400234Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2022-01-16T19:13:24.400234Z",
+        "size": "2622",
+        "md5Hash": "vFCzOkD3+GZVwmnd0LAKxg==",
+        "mediaLink": "http://0.0.0.0:4443/download/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/thumb/pexels-tanya-gorelova-3933193.jpg?generation=1642360404&alt=media",
+        "crc32c": "RhpIRQ==",
+        "etag": "vFCzOkD3+GZVwmnd0LAKxg=="
+      },
+      "google-oauth2_114249034509937388266/med/pexels-tanya-gorelova-3933193.jpg": {
+        "kind": "storage#object",
+        "id": "public-files/google-oauth2_114249034509937388266/med/pexels-tanya-gorelova-3933193.jpg/1642360404",
+        "selfLink": "/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/med/pexels-tanya-gorelova-3933193.jpg",
+        "name": "google-oauth2_114249034509937388266/med/pexels-tanya-gorelova-3933193.jpg",
+        "bucket": "public-files",
+        "generation": "1642360404",
+        "metageneration": "2",
+        "contentType": "image/jpeg",
+        "timeCreated": "2022-01-16T19:13:24.469738Z",
+        "updated": "2022-01-16T19:13:24.469738Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2022-01-16T19:13:24.469738Z",
+        "size": "15319",
+        "md5Hash": "5fCGimVRrsxXyMweAC+xaw==",
+        "mediaLink": "http://0.0.0.0:4443/download/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/med/pexels-tanya-gorelova-3933193.jpg?generation=1642360404&alt=media",
+        "crc32c": "f4RKKg==",
+        "etag": "5fCGimVRrsxXyMweAC+xaw=="
+      },
+      "google-oauth2_114249034509937388266/large/pexels-tanya-gorelova-3933193.jpg": {
+        "kind": "storage#object",
+        "id": "public-files/google-oauth2_114249034509937388266/large/pexels-tanya-gorelova-3933193.jpg/1642360404",
+        "selfLink": "/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/large/pexels-tanya-gorelova-3933193.jpg",
+        "name": "google-oauth2_114249034509937388266/large/pexels-tanya-gorelova-3933193.jpg",
+        "bucket": "public-files",
+        "generation": "1642360404",
+        "metageneration": "2",
+        "contentType": "image/jpeg",
+        "timeCreated": "2022-01-16T19:13:24.519275Z",
+        "updated": "2022-01-16T19:13:24.519275Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2022-01-16T19:13:24.519275Z",
+        "size": "30856",
+        "md5Hash": "lUVXw6OAL+LpYRhuS2oSyg==",
+        "mediaLink": "http://0.0.0.0:4443/download/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/large/pexels-tanya-gorelova-3933193.jpg?generation=1642360404&alt=media",
+        "crc32c": "fhhQrg==",
+        "etag": "lUVXw6OAL+LpYRhuS2oSyg=="
+      },
+      "google-oauth2_114249034509937388266/thumb/pexels-anna-tarazevich-6937447.jpg": {
+        "kind": "storage#object",
+        "id": "public-files/google-oauth2_114249034509937388266/thumb/pexels-anna-tarazevich-6937447.jpg/1642373798",
+        "selfLink": "/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/thumb/pexels-anna-tarazevich-6937447.jpg",
+        "name": "google-oauth2_114249034509937388266/thumb/pexels-anna-tarazevich-6937447.jpg",
+        "bucket": "public-files",
+        "generation": "1642373798",
+        "metageneration": "2",
+        "contentType": "image/jpeg",
+        "timeCreated": "2022-01-16T22:56:38.118757Z",
+        "updated": "2022-01-16T22:56:38.118757Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2022-01-16T22:56:38.118757Z",
+        "size": "2572",
+        "md5Hash": "1tOco1ne2vObEBd64kgAjA==",
+        "mediaLink": "http://0.0.0.0:4443/download/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/thumb/pexels-anna-tarazevich-6937447.jpg?generation=1642373798&alt=media",
+        "crc32c": "e2bwFg==",
+        "etag": "1tOco1ne2vObEBd64kgAjA=="
+      },
+      "google-oauth2_114249034509937388266/med/pexels-anna-tarazevich-6937447.jpg": {
+        "kind": "storage#object",
+        "id": "public-files/google-oauth2_114249034509937388266/med/pexels-anna-tarazevich-6937447.jpg/1642373798",
+        "selfLink": "/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/med/pexels-anna-tarazevich-6937447.jpg",
+        "name": "google-oauth2_114249034509937388266/med/pexels-anna-tarazevich-6937447.jpg",
+        "bucket": "public-files",
+        "generation": "1642373798",
+        "metageneration": "2",
+        "contentType": "image/jpeg",
+        "timeCreated": "2022-01-16T22:56:38.142925Z",
+        "updated": "2022-01-16T22:56:38.142925Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2022-01-16T22:56:38.142925Z",
+        "size": "13620",
+        "md5Hash": "9CQZfnCa9MICXAFwe+fUvA==",
+        "mediaLink": "http://0.0.0.0:4443/download/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/med/pexels-anna-tarazevich-6937447.jpg?generation=1642373798&alt=media",
+        "crc32c": "uuCfDg==",
+        "etag": "9CQZfnCa9MICXAFwe+fUvA=="
+      },
+      "google-oauth2_114249034509937388266/large/pexels-anna-tarazevich-6937447.jpg": {
+        "kind": "storage#object",
+        "id": "public-files/google-oauth2_114249034509937388266/large/pexels-anna-tarazevich-6937447.jpg/1642373798",
+        "selfLink": "/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/large/pexels-anna-tarazevich-6937447.jpg",
+        "name": "google-oauth2_114249034509937388266/large/pexels-anna-tarazevich-6937447.jpg",
+        "bucket": "public-files",
+        "generation": "1642373798",
+        "metageneration": "2",
+        "contentType": "image/jpeg",
+        "timeCreated": "2022-01-16T22:56:38.407611Z",
+        "updated": "2022-01-16T22:56:38.407611Z",
+        "storageClass": "STANDARD",
+        "timeStorageClassUpdated": "2022-01-16T22:56:38.407611Z",
+        "size": "326949",
+        "md5Hash": "uvqeyklG5Q6AqebG6KCA6Q==",
+        "mediaLink": "http://0.0.0.0:4443/download/storage/v1/b/public-files/o/google-oauth2_114249034509937388266/large/pexels-anna-tarazevich-6937447.jpg?generation=1642373798&alt=media",
+        "crc32c": "Pc+NRQ==",
+        "etag": "uvqeyklG5Q6AqebG6KCA6Q=="
+      }
+    }
+  },
+  "resumable": {}
+}

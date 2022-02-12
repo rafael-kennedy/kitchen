@@ -15,6 +15,14 @@ const routes = [
     meta: { public: true },
     name: "borrow-home",
   },
+  {
+    path: "/borrow/search-results/:latitude/:longitude/:text?",
+    name: "borrow-search-results",
+    meta: { public: true },
+    props: true,
+    component: () =>
+      import("../pages/borrow/borrow-search-results/borrow-search-results.vue"),
+  },
   ...lendRoutes,
 ];
 

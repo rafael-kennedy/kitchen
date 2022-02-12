@@ -6,6 +6,7 @@ import oidc from "express-openid-connect";
 import { setupMongoose } from "./mongo.js";
 import { registerFacilitiesService } from "./services/facilities/facilities.service.js";
 import { registerOwnedService } from "./services/owned/owned.service.js";
+import { registerDocumentRequirementsService } from "./services/document-requirements/document-requirements.service.js";
 const { auth, requiresAuth } = oidc;
 const app = express(feathers());
 const config = {
@@ -24,7 +25,13 @@ const config = {
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
-app.use(requiresAuth());
+app.use((req, res, next) => {
+  if (req.url.startsWith("/public")) {
+    return next();
+  } else {
+    requiresAuth()(req, res, next);
+  }
+});
 
 const port = process.env.PORT || 8080;
 setupMongoose();
@@ -45,6 +52,7 @@ app.use((req, res, next) => {
 registerFacilitiesService(app);
 registerOwnedService(app);
 registerUtilityRoutes(app);
+registerDocumentRequirementsService(app);
 
 app
   .listen(port)

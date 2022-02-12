@@ -8,8 +8,8 @@ export const lendRoutes = [
     beforeEnter: fetchMyFacilities,
   },
   {
-    path: "/lend-edit/:facilityId?",
-    component: () => import("../pages/lend/edit-facility.vue"),
+    path: "/lend-edit/:facilityId?/:tabNumber?",
+    component: () => import("../pages/lend/edit-facility/edit-facility.vue"),
     name: "lend-edit",
     props: true,
     beforeEnter: fetchMyFacilities,

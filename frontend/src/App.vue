@@ -11,7 +11,7 @@ const user = getUser();
       </el-col>
       <el-col :span="10"> <div></div></el-col>
       <el-col :span="8">
-        <el-container>
+        <el-container :style="{ justifyContent: 'end' }">
           <el-space>
             <template v-if="user">
               <el-link href="/auth/logout">Log out {{ user.name }}</el-link>
